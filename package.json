@@ -3,16 +3,27 @@
   "version": "0.0.1",
   "description": "Node.js version of the PRNG xoroshiro128plus",
   "main": "xoroshiro.js",
-  "private": true,
+  "private": false,
+  "homepage": "https://github.com/Oipo/xoroshirojs128plus",
+  "license": "MIT",
   "dependencies": {
     "bindings": "latest",
     "nan": "latest"
   },
   "scripts": {
-    "test": "node xoroshiro.js"
+    "test": "node xoroshiro.js",
+    "install": "node-gyp rebuild"
   },
   "gypfile": true,
   "devDependencies": {
     "chai": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oipo/xoroshirojs128plus.git"
+  },
+  "author": "Michael de Lang (https://github.com/Oipo)",
+  "bugs": {
+    "url": "https://github.com/Oipo/xoroshirojs128plus/issues"
   }
 }
