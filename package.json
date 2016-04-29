@@ -1,6 +1,6 @@
 {
   "name": "xoroshirojs128plus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js version of the PRNG xoroshiro128plus",
   "main": "xoroshiro.js",
   "private": false,
