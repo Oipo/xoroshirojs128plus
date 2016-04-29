@@ -2,7 +2,7 @@ xoroshirojs is a nodejs addon for http://xorshift.di.unimi.it/xoroshiro128plus.c
 
 # Usage
 
-`npm i --save xoroshirjs128plus`
+`npm i --save xoroshirojs128plus`
 
 ```javascript
 var xoroshirojs = require('xoroshirojs128plus')
