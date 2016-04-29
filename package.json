@@ -11,7 +11,7 @@
     "nan": "latest"
   },
   "scripts": {
-    "test": "node xoroshiro.js",
+    "test": "node test/xoroshiro.js",
     "install": "node-gyp rebuild"
   },
   "gypfile": true,

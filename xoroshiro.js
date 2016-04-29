@@ -1,14 +1,9 @@
-var xoroshirojs = require('bindings')('xoroshirojs.node')
-var chai = require('chai');
+var xoroshirojsBinding = require('bindings')('xoroshirojs.node')
 
-chai.expect(xoroshirojs.seed).to.throw("Wrong number of arguments, expected 2");
-chai.expect(xoroshirojs.next).to.throw("Call Seed first before requesting a value");
+exports.seed = function (high, low) {
+    return xoroshirojsBinding.seed(high, low);
+}
 
-var ret = xoroshirojs.seed(10, 11)
-
-chai.expect(ret).to.equal(true)
-
-for (var i = 0; i < 5; i++) {
-    ret = xoroshirojs.next()
-    console.log(ret)
+exports.next = function () {
+    return xoroshirojsBinding.next();
 }
